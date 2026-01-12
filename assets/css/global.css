@@ -1,3 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+
+:root {
+    --primary-color: #020228;
+    --secondary-color: #ff00e5;
+    --tertiary-color: #b535f6;
+    --btn-bg-color-gradient: linear-gradient(
+      45deg,
+      #9b34ef 0%,
+      #490cb0 20%,
+      transparent 50%
+    );
+    --btn-link-bg-color: #fff;
+    --btn-link-color: #000;
+    --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
+    --divider-bg-color: linear-gradient(
+      90deg,
+      #5516ba,
+      rgba(255, 0, 229, 0.5) 80%
+    );
+    --nav-bg-color: rgba(0, 0, 0, 0.3);
+    --text-color: #fff;
+    --link-color: #9e86ff;
+    --form-bg-color: rgba(211, 211, 211, 0.06);
+    --form-field-bg-color: rgba(0, 0, 0, 0.2);
+    --form-field-border: 1px solid rgba(255, 255, 255, 0.7);
+    --form-field-placeholder: rgba(255, 255, 255, 0.7);
+    --form-field-error: rgb(255, 76, 76);
+
+    --main-font: 'Raleway', sans-serif;
+    --text-font: 'Quicksand', sans-serif;
+
+    font-size: 16px;
+    --font-size-2xl: 3rem;
+    --font-size-xl: 2.5rem;
+    --font-size-l: 2rem;
+    --font-size-2m: 1.5rem;
+    --font-size-m: 1.25rem;
+    --font-size-r: 1rem;
+    --font-size-s: 0.875rem;
+    --font-size-xs: 0.75rem;
+
+    --font-weight-bold: 700;
+    --font-weight-medium: 500;
+    --font-weight-regular: 400;
+    --font-weight-light: 300;
+
+
+    --padding-2xl: 3rem;
+    --padding-xl: 2.5rem;
+    --padding-l: 2rem;
+    --padding-2m: 1.5rem;
+    --padding-m: 1.25rem;
+    --padding-r: 1rem;
+    --padding-s: 0.875rem;
+    --padding-xs: 0.75rem;
+    --padding-2xs: 0.5rem;
+
+    --margin-2xl: 3rem;
+    --margin-xl: 2.5rem;
+    --margin-l: 2rem;
+    --margin-2m: 1.5rem;
+    --margin-m: 1.25rem;
+    --margin-r: 1rem;
+    --margin-s: 0.875rem;
+    --margin-xs: 0.75rem;
+    --margin-2xs: 0.5rem;
+
+    --gap-2xl: 3rem;
+    --gap-xl: 2.5rem;
+    --gap-l: 2rem;
+    --gap-2m: 1.5rem;
+    --gap-m: 1.25rem;
+    --gap-r: 1rem;
+    --gap-s: 0.875rem;
+    --gap-xs: 0.75rem;
+
+    --letter-spacing-l: 4px;
+    --letter-spacing-s: 2px;
+
+    --border-radius-s: 8px;
+    --border-radius-m: 10px;
+    --border-radius-l: 500px; 
+
+    scroll-behavior: smooth;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: var(--main-font);
+    font-size: 16px;
+    height: 100vh;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: var(--padding-2m);
+    text-align: center;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--main-font);
+  }
+
+  h1 {
+    font-size: var(--font-size-2xl);
+  }
+
+  h2 {
+    font-size: var(--font-size-l);
+  }
+
+  p {
+    font-family: var(--text-font);
+  }
+
+
+
  ::-webkit-scrollbar {
     width: 8px;
   }
