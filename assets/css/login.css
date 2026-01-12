@@ -1,3 +1,110 @@
 @import url(../css/global.css);
 
+body {
+  background: var(--primary-color);
+  height: 100vh;
+}
+
+.menu {
+  position:relative;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-2m);
+  width: 100%;
+  height: 70%;
+  background: url(../img/background-movies-series.png);
+}
+
+.login {
+  max-width: 800px;
+  width: 100%;
+  padding: var(--padding-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-r);
+  border-radius: 8px;
+  background: var(--form-bg-color);
+}
+
+.title {
+  font-size: var(--font-size-m);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-s);
+  margin: 0 0 var(--margin-2m);
+}
+
+.text {
+  font-family: var(--main-font);
+  text-align: left;
+}
+
+#adress,
+#password {
+  padding: var(--padding-r);
+  border-radius: 8px;
+  background: var(--form-field-bg-color);
+  border-color: var(--form-field-border);
+  
+}
+
+#adress::placeholder,
+#password::placeholder {
+  color: var(--form-field-placeholder);
+  font-size: var(--font-size-r);
+}
+
+.form__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-r);
+  margin: var(--margin-2m) 0 0;
+
+  @media screen and (min-width: 480px) {
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
+
+}
+
+#signin {
+  border: none;
+  padding: var(--padding-r) var(--padding-xl);
+  margin: 0 0 var(--margin-2m);
+  border-radius: var(--border-radius-l);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-l);
+  text-transform: uppercase;
+  background: var(--btn-bg-color-gradient);
+  background-size: 250%;
+  color: var(--text-color);
+  transition: background 1s, outline 1s, transform 1s;
+  outline: 3px solid transparent;
+
+}
+
+#signin:hover {
+    background: transparent;
+    cursor: pointer;
+    background-position: 100%;
+    outline: 2px solid var(--secondary-color);
+    transform: scale(1.05);
+}
+
+.reset__password {
+  text-decoration: none;
+  color: var(--link-color);
+  font-weight: var(--font-weight-bold);
+}
+
 
