@@ -4,9 +4,14 @@
     padding: 100px 0 300px;
     margin-top: 80px;
     text-align: center;
+    background: var(--primary-color);
+
+    @media screen and (min-width: 768px) {
     background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
     background-size: 400% 400%;
-    animation: gradient 10s ease infinite alternate;
+    animation: gradient 10s ease infinite alternate;    
+    }
+    
 }
 
 @keyframes gradient {
@@ -270,6 +275,7 @@
     margin-top: var(--margin-xl);
     text-align: center;
     max-width: 1200px;
+    padding: var(--padding-2m);
 
     @media screen and (min-width: 480px) {
         grid-column-start: 1;
@@ -283,6 +289,7 @@
 
     @media screen and (min-width: 800px) {
         grid-template-columns: repeat(3, 1fr);
+        overflow-x: hidden;
     }
 
     @media screen and (min-width: 800px) {
@@ -297,50 +304,23 @@
   background-size: cover;
   background-position: center;
   border: 2px solid transparent;
-  height: 500px;
+  transition: transform 0.8s, background 0.8s, border 1s;
 }
 
 .contents__card:hover {
     transform: scale(1.05);
-    transition: transform 0.8s ease, background-image 0.8s ease, border 1s;
     border: 2px solid var(--tertiary-color);
 }
 
-.contents__card {
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    background-size: cover;
-    background-position: center;
-    transition: opacity 2s;
+.contents__card:hover .contents__image {
+  opacity: 0;
 }
 
-.card__hbo {
-    background-image: url(../img/hbo-default_0.webp);
-}
-
-.contents__card:nth-child(1) {
-  background-image: url("../img/hbo-default_0.webp");
-}
-
-.contents__card:nth-child(2) {
-  background-image: url("../img/MAX-Default.webp");
-}
-
-.contents__card:nth-child(3) {
-  background-image: url("../img/DC_Default.webp");
-}
-
-.contents__card:nth-child(4) {
-  background-image: url("../img/WB-Default\ \(1\).webp");
-}
-
-.contents__card:nth-child(5) {
-  background-image: url("../img/CN-Default.webp");
-}
-
-.contents__card:nth-child(6) {
-  background-image: url("../img/UCL-Default.webp");
+.contents__image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: opacity 2s;
 }
 
 .contents__card:nth-child(1):hover {
