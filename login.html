@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login | HBO MAX Clone</title>
     <link rel="stylesheet" href="./assets/css/login.css">
 </head>
+
 <body>
     <nav class="menu">
         <a href="#">
@@ -13,22 +15,22 @@
         </a>
         <div class="menu__item">
             <a href="./login.html" class="menu__signin">Entrar</a>
-            <button href="#subscription" class="menu__subscription">Assine Agora</button>
+            <button id="subscribe" type="button" class="menu__subscription">Assine Agora</button>
         </div>
     </nav>
     <main class="content">
         <form class="login container">
-                <h1 class="title">Entrar</h1>
-                <p class="text"> Você tem uma conta na HBO Max? </p>
-                <input type="email" class="adress" id="adress" name="email" placeholder="Endereço de e-mail">
-                <input type="password" class="password" name="senha" id="password" placeholder="Senha" minlength="8">
+            <h1 class="title">Entrar</h1>
+            <p class="text"> Você tem uma conta na HBO Max? </p>
+            <input type="email" class="adress" id="adress" name="email" placeholder="Endereço de e-mail">
+            <input type="password" class="password" name="senha" id="password" placeholder="Senha" minlength="8">
             <div class="form__buttons">
-                <button class="signin" id="signin">Entrar</button>
+                <button class="signin" id="signin" type="submit">Entrar</button>
                 <a href="" class="reset__password">Esqueceu a senha?</a>
             </div>
         </form>
     </main>
-<footer class="footer">
+    <footer class="footer">
         <div class="footer__menu">
             <a href="" class="footer__link">Agora na HBO Max</a>
             <a href="" class="footer__link">Em breve</a>
@@ -53,6 +55,7 @@
             </a>
         </div>
     </footer>
-    
+
 </body>
+
 </html>
