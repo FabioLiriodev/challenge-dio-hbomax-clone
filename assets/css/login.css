@@ -64,6 +64,7 @@ body {
   border-radius: 8px;
   background: var(--form-field-bg-color);
   border-color: var(--form-field-border);
+  color: var(--text-color);
   
 }
 
@@ -71,6 +72,11 @@ body {
 #password::placeholder {
   color: var(--form-field-placeholder);
   font-size: var(--font-size-r);
+}
+
+#adress:invalid,
+#password:invalid {
+  border-color: var(--form-field-error);
 }
 
 .form__buttons {
