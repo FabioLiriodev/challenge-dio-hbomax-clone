@@ -254,7 +254,6 @@
     padding: var(--padding-2m);
     margin: 100px auto;
     max-width: 1200px;
-    border: 2px solid red;
 }
 
 .contents__title {
@@ -271,7 +270,6 @@
     margin-top: var(--margin-xl);
     text-align: center;
     max-width: 1200px;
-    border: 2px solid blue;
 
     @media screen and (min-width: 480px) {
         grid-column-start: 1;
@@ -299,27 +297,53 @@
   background-size: cover;
   background-position: center;
   border: 2px solid transparent;
-  transition: transform 0.8s, background 0.8s, border 1s;
-  border: 1px solid green;
+  height: 500px;
 }
 
 .contents__card:hover {
     transform: scale(1.05);
+    transition: transform 0.8s ease, background-image 0.8s ease, border 1s;
     border: 2px solid var(--tertiary-color);
 }
 
-.contents__card:hover .contents__card img {
-    opacity: 0;
-}
-
-.contents__card img {
+.contents__card {
     width: 100%;
     object-fit: cover;
     object-position: center;
+    background-size: cover;
+    background-position: center;
     transition: opacity 2s;
 }
 
-.contents__card img:nth-child(1):hover {
+.card__hbo {
+    background-image: url(../img/hbo-default_0.webp);
+}
+
+.contents__card:nth-child(1) {
+  background-image: url("../img/hbo-default_0.webp");
+}
+
+.contents__card:nth-child(2) {
+  background-image: url("../img/MAX-Default.webp");
+}
+
+.contents__card:nth-child(3) {
+  background-image: url("../img/DC_Default.webp");
+}
+
+.contents__card:nth-child(4) {
+  background-image: url("../img/WB-Default\ \(1\).webp");
+}
+
+.contents__card:nth-child(5) {
+  background-image: url("../img/CN-Default.webp");
+}
+
+.contents__card:nth-child(6) {
+  background-image: url("../img/UCL-Default.webp");
+}
+
+.contents__card:nth-child(1):hover {
   background-image: url("../img/hbo-hover_0.webp");
 }
 
